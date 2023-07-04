@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Sheet</title>
+    <link rel="stylesheet" href="./CSS/style1.css">
+    <script src="./javaScript/app1.js"></script>
+</head>
+<body>
+    <center>
+        <h1>
+            Mark Sheet
+        </h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Subject</td>
+                    <td>Total Marks</td>
+                    <td>Obtained marks</td>
+                    <td>Percentage</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML 5</td>
+                    <td>100</td>
+                    <td id="html-marks"></td>
+                    <td id="html-percentage"></td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>100</td>
+                    <td id="css-marks"></td>
+                    <td id="css-percentage"></td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>100</td>
+                    <td id="javaScript-marks"></td>
+                    <td id="javaScript-percentage"></td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>100</td>
+                    <td id="react-marks"></td>
+                    <td id="react-percentage"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td class="center">400</td>
+                <td id="obtained-marks" class="center"></td>
+                <td id="percentage" class="center"></td>
+            </tfoot>
+        </table>
+        <div class="button">
+            <button onclick="table()">click</button>
+        </div>
+    </center>
+</body>
+</html>
