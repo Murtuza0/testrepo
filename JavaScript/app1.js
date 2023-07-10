@@ -8,12 +8,20 @@ function table() {
     document.getElementById("css-marks").innerHTML = css;
     document.getElementById("javaScript-marks").innerHTML = javaScript;
     document.getElementById("react-marks").innerHTML = react;
+    
+    document.getElementById("html-percentage").innerHTML = html + "%";
+    document.getElementById("css-percentage").innerHTML = css + "%";
+    document.getElementById("javascript-percentage").innerHTML = javaScript + "%";
+    document.getElementById("react-percentage").innerHTML = react + "%";
+    
     if (html >= 100 || css >= 100 || javaScript >= 100 || react >= 100) {
         alert("Please Correct Value");
     }   else {
         let totalNumber = html + css + javaScript + react;
         document.getElementById("obtained-marks").innerHTML = totalNumber;
-        let percentage = totalNumber % 3 / 400 * 100;
-        console.log(percentage);
+        let percentage = totalNumber / 400 * 100;
+        let randomNumber = Math.floor(percentage);
+        // console.log(randomNumber + "%");
+        document.getElementById("percentage").innerHTML = randomNumber + "%";
     };   
 };

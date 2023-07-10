@@ -29,20 +29,25 @@ table >thead >tr >td {
     /* margin: 10px; */
     padding: 10px 15px;
     letter-spacing: 1px;
+    color: #000;
+    font-weight: 1500;
+    font-size: 1.50em;
 }
 table >tbody >tr >td {
     padding: 10px 5px;
     letter-spacing: 1px;
+    /* color: #000; */
 }
 table >tfoot >tr >td {
     padding: 10px 10px;
     letter-spacing: 1px;
+    /* color: #000; */
 }
 .center {
     text-align: center;
 }
 .button {
-    margin: 20px;
+    margin: 20px;;
 }
 .button button {
     padding: 10px 20px;
@@ -53,4 +58,5 @@ table >tfoot >tr >td {
     font-weight: 800;
     border-radius: 5px;
     box-shadow: 0 0 5px var(--color);
+    cursor: pointer;
 }
